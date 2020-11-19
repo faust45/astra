@@ -1,0 +1,2 @@
+clj  -i test/astra/server_test.clj  -e "(clojure.test/run-tests 'astra.server-test)"
+

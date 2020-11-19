@@ -1,0 +1,1 @@
+clj -m cljs.main -re nashorn -i test/astra/ui/ui_test.cljs -e "(cljs.test/run-tests 'astra.ui.ui-test)"

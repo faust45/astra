@@ -1,0 +1,34 @@
+{:deps {org.clojure/clojurescript {:mvn/version "1.10.520"} 
+        org.clojure/tools.nrepl {:mvn/version "0.2.13"} 
+        org.clojure/core.async {:mvn/version "0.6.532"}
+        hipo {:mvn/version "0.5.2"}
+        ring {:mvn/version "1.8.2"}
+        ring/ring-json {:mvn/version "0.5.0"}
+        metosin/reitit {:mvn/version "0.5.10"}
+        funcool/lentes {:mvn/version "1.2.0"}
+        funcool/promesa {:mvn/version "5.1.0"}
+        hiccup-find  {:mvn/version "1.0.0"}
+        weasel {:mvn/version "0.7.1"}}
+ :paths ["src" "test" "target" "resources"]
+ :aliases
+ {:dev
+  {:main-opts
+                                        ;["-m"  "figwheel.main" "--build" "dev" "--repl"]
+   ["--build" "dev" "--repl"]}
+  :ncljs
+  {:extra-deps
+   {nrepl/nrepl {:mvn/version "0.8.1"}
+    cider/piggieback {:local/root
+                      "/home/como/code/piggieback/target/piggieback-0.5.2.jar"}
+    cider/cider-nrepl {:mvn/version "0.24.0"}}}
+  :nrepl
+  {:extra-deps
+   {nrepl/nrepl {:mvn/version "0.8.3"}
+    cider/piggieback {:local/root
+                      "/home/como/code/piggieback/target/piggieback-0.5.2.jar"}
+    cider/cider-nrepl {:mvn/version "0.24.0"}}
+   :main-opts ["-m" "nrepl.cmdline" "--middleware"
+               "[cider.piggieback/wrap-cljs-repl]"
+               "--transport" "nrepl.transport/tty"
+               "--port" "8001"]}}}
+

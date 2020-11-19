@@ -1,0 +1,4 @@
+.tags-input .tag::after {
+	content: "x";
+	padding: 0px 2px;
+}

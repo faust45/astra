@@ -1,0 +1,137 @@
+button::-moz-focus-inner, input::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+.tags-input {
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	display: inline-block;
+	padding: 4px 6px;
+	color: #555;
+	vertical-align: middle;
+	border-radius: 4px;
+	max-width: 100%;
+	line-height: 22px;
+	cursor: text;
+	margin-bottom: 10px;
+}
+
+.tags-input .tag {
+	margin-right: 10px;
+	margin-top 6px;
+	margin-bottom: 6px;
+}
+
+.tags-input .tag-remove::after {
+	content: "x";
+	padding: 2px 2px;
+	margin-left: 8px;
+	margin-right 8px;
+	cursor: pointer
+}
+
+.tags-input input {
+	border: none;
+	box-shadow: none;
+	outline: none;
+	background-color: transparent;
+	padding: 0 6px;
+	margin: 0;
+	width: auto;
+	max-width: inherit;
+}
+
+table th, .schedule td {
+    padding: 0.5rem !important;
+}
+
+td .row { margin: 0 0 0 0 !important; }
+td { margin: 0 0 0 0 !important; }
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.hand {
+  cursor: pointer;
+}
+
+.table-hover-cells > tbody > tr > th:hover,
+.table-hover-cells > tbody > tr > td:hover {
+}
+
+.table-hover-cells > tbody > tr > th.active:hover,
+.table-hover-cells > tbody > tr > td.active:hover,
+.table-hover-cells > tbody > tr.active > th:hover,
+.table-hover-cells > tbody > tr.active > td:hover {
+}
+
+.table-hover.table-hover-cells > tbody > tr:hover > th:hover,
+.table-hover.table-hover-cells > tbody > tr:hover > td:hover {
+}
+
+.table-hover.table-hover-cells > tbody > tr.active:hover > th:hover,
+.table-hover.table-hover-cells > tbody > tr.active:hover > td:hover {
+}
+
+
+h3.spaced {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.month-arrow {
+    padding-top: 10px;
+}
+
+.centered {
+    padding-top: 10px;
+}
+
+pre {
+    border: 0px !important;
+}
+    
+.week-end {
+    color: #0e97e1 !important;
+}
+
+.invalid {
+    color: green;
+}
+
+th.today {
+    border-bottom-color: coral !important;
+    border-bottom-width: 2px !important;
+}
+
+td.selected {
+  background-color: #B4CCFC;
+}
+
+td.day-off {
+  background-color: #e5f3fb;
+}
+
+tr.selected  {
+    color: #3D9970;
+    font-weight: bold;
+}
+
+tr.mouse-on button.remove {
+    display:none;
+}
+
+.symbol {
+    font-weight: 400;
+}

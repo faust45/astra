@@ -1,0 +1,6 @@
+nashorn_code_cache/
+mrepl.clj
+*.swp
+.nashorn_repl_deps.js
+.cpcache/
+.cljs_nashorn_repl/
